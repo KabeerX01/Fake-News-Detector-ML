@@ -1,0 +1,12 @@
+# Ignore datasets (too large for GitHub)
+data/Fake.csv
+data/True.csv
+data/news_dataset.csv
+
+# Ignore large model files
+models/*.joblib
+
+# Ignore Python cache and temp files
+__pycache__/
+*.pyc
+*.pyo
