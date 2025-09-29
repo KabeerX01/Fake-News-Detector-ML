@@ -1,30 +1,55 @@
-# Fake News Detector 📰🤖
+# Fake News Detector 🤖📰
 
-A Machine Learning project to detect fake vs real news articles using **TF–IDF + Logistic Regression**.
-
+A Machine Learning project to detect fake vs real news using **TF–IDF + Logistic Regression**.
 ## 🚀 Features
-- Preprocesses and cleans news text (title + body)
-- Extracts features with TF–IDF (unigrams + bigrams)
-- Trains Logistic Regression baseline model
-- Evaluates with Accuracy, Precision, Recall, F1, ROC AUC
-- Saves trained model with `joblib`
-- Predicts fake/real news from new input text
 
-## 📂 Project Structure
+- 🧹 Cleans and processes news text  
+- 🔍 Extracts TF–IDF features (unigrams + bigrams)  
+- 🤖 Trains Logistic Regression model  
+- 📊 Evaluates Accuracy, Precision, Recall, F1, ROC AUC  
+- 💾 Saves model using `joblib`  
+- 🧠 Predicts fake/real from new text input
+## 🧱 Project Structure
+```text
 Fake-News-Detector/
-│
-├── images/                    # Plots and visual outputs
-│   └── confusion_matrix.png
-│
-├── scripts/                   # Extra utility scripts
-│   └── prepare_data.py        # Merges Fake.csv & True.csv (not uploaded)
-│
-├── models/                    # Contains trained .joblib model (ignored)
-│   └── model.joblib           # <--- Not included in repo due to size
-│
-├── train.py                   # Trains and evaluates the model
-├── predict.py                 # Predicts on new user input
-├── requirements.txt           # Dependencies
-├── .gitignore                 # Prevents large files from being uploaded
+├── data/             # Contains sample_news.csv only
+├── images/           # Contains confusion_matrix.png
+├── scripts/          # prepare_data.py (merges datasets)
+├── models/           # model.joblib (NOT uploaded)
+├── train.py
+├── predict.py
+├── requirements.txt
+├── .gitignore
 └── README.md
+```
+## 📦 Dataset Download
 
+> ⚠️ GitHub limits uploads to 25MB via web. The full datasets are too large to include here.
+
+Please manually download the datasets and place them inside the `data/` folder:
+
+- [Fake.csv](https://drive.google.com/file/d/17G4BFxxSyaDeClSrYEGxu1_stYNCwCfS/view?usp=drive_link)  
+- [True.csv](https://drive.google.com/file/d/1__kluUs62qeiy69OFex5QnXyro24LtoS/view?usp=drive_link)  
+- [news_dataset.csv](https://drive.google.com/file/d/1of7lMvgxM5oHn5TvTr9DYrTsp_ydLjw2/view?usp=drive_link)  
+
+Or generate `news_dataset.csv` by running:
+
+```bash
+python scripts/prepare_data.py
+```
+## 📸 Confusion Matrix
+
+This is the confusion matrix generated after evaluating the model:
+
+![Confusion Matrix](images/confusion_matrix.png)
+
+## 🙌 Acknowledgments
+
+- Built with scikit-learn, pandas, and matplotlib
+- Inspired by real-world misinformation problems
+- Datasets provided by Kaggle / online news sources
+## 🧑‍💻 Author
+
+Made with ❤️ by Kabeer Shaikh.
+
+Feel free to contribute or give feedback!
