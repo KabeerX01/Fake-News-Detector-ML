@@ -41,7 +41,7 @@ python scripts/prepare_data.py
 
 This is the confusion matrix generated after evaluating the model:
 
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](confusion_matrix.png)
 
 ## 🙌 Acknowledgments
 
@@ -53,3 +53,4 @@ This is the confusion matrix generated after evaluating the model:
 Made with ❤️ by Kabeer Shaikh.
 
 Feel free to contribute or give feedback!
+
